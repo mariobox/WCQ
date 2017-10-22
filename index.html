@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Team Positions and Points</title>
+  <link rel="stylesheet" href="skeleton.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="columns twelve">
+        <h1>South America World Cup Qualifiers</h1>
+        <p>This is a JavaScript practice project that prints a ranking of teams in order of points (more points ranked first) for the last two legs of South America's World Cup qualifying games. 
+When you click on the flag of the team you think will win (or "x" for a tie), the Positions table will update automatically. This allows you to play with different scenarios. You can use the basic programming of this example to track your favorite competition.</p>
+<p>This program has been created using pure JavaScript (no jQuery or any other JS library). The formatting of the table and the games can be better, but the objective of this project was to practice JavaScript, not HTML or CSS, so I focused on the functionality of it more than the looks.</p>
+<p>Another caveat: this model does not include goal differential, which would have required me to add score functionality. Doeable, but a lot more work. I may be upgrading the program to include goal differential in the future.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns six">
+        <h3>Oct 5 Series</h3>
+        <div id="1"><img src="img/argentina.png" id="argentina"> <img src="img/tie.png" id="tie"> <img src="img/peru.png" id="peru"></div>
+        <div id="2"><img src="img/chile.png" id="chile"> <img src="img/tie.png" id="tie"> <img src="img/ecuador.png" id="ecuador"></div>
+        <div id="3"><img src="img/colombia.png" id="colombia"> <img src="img/tie.png" id="tie"> <img src="img/paraguay.png" id="paraguay"></div>
+        <div id="4"><img src="img/bolivia.png" id="bolivia"> <img src="img/tie.png" id="tie"> <img src="img/brazil.png" id="brazil"></div>
+        <div id="5"><img src="img/venezuela.png" id="venezuela"> <img src="img/tie.png" id="tie"> <img src="img/uruguay.png" id="uruguay"></div>
+        <h3>Oct 10 Series</h3>
+        <div id="6"><img src="img/ecuador.png" id="ecuador"> <img src="img/tie.png" id="tie"> <img src="img/argentina.png" id="argentina"></div>
+        <div id="7"><img src="img/peru.png" id="peru"> <img src="img/tie.png" id="tie"> <img src="img/colombia.png" id="colombia"></div>
+        <div id="8"><img src="img/paraguay.png" id="paraguay"> <img src="img/tie.png" id="tie"> <img src="img/venezuela.png" id="venezuela"></div>
+        <div id="9"><img src="img/uruguay.png" id="uruguay"> <img src="img/tie.png" id="tie"> <img src="img/bolivia.png" id="bolivia"></div>
+        <div id="10"><img src="img/brazil.png" id="brazil"> <img src="img/tie.png" id="tie"> <img src="img/chile.png" id="chile"></div>
+      </div>
+      <div class="columns six">
+        <h3>Positions</h3>
+        <span>Team  GP | W | T | L | Pts</span><br />
+        <div id="table"></div>
+        <br />
+        <p>Refresh your browser to initialize the table</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="team.js"></script>
+
+</body>
+
+</html>

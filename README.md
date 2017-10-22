@@ -1,2 +1,5 @@
-# WCQ
-World Cup Qualifiers Team Standings Simulation
+<h1>South America World Cup Qualifiers Ranking Simulation</h1>
+        <p>This is a JavaScript practice project that prints a ranking of teams in order of points (more points ranked first) for the last two legs of South America's World Cup qualifying games. 
+When you click on the flag of the team you think will win (or "x" for a tie), the Positions table will update automatically. This allows you to play with different scenarios. You can use the basic programming of this example to track your favorite competition.</p>
+<p>This program has been created using pure JavaScript (no jQuery or any other JS library). The formatting of the table and the games can be better, but the objective of this project was to practice JavaScript, not HTML or CSS, so I focused on the functionality of it more than the looks.</p>
+<p>Another caveat: this model does not include goal differential, which would have required me to add score functionality. Doeable, but a lot more work. I may be upgrading the program to include goal differential in the future.</p>
