@@ -94,12 +94,12 @@ document.body.addEventListener('click', () => {
                 window[document.getElementById(whatGame).lastChild.id].tie();
             }  // close if inside second else                
 
-        } // close second else
+        } // close third else
 
 
-    }  // close first else
+    }  // close second else
 
-}
+}  // close first else
 
     sortTeams();
     printTable();
