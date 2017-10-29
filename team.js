@@ -53,9 +53,11 @@ function sortTeams() {
 
 
 function printTable() {
+    positions = "<table><tr><th>#</th><th>Country</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>Pts.</th></tr>";
     for (var i = 0; i < teams.length; i++) {
-        positions = positions + (i + 1) + '.' + '  ' + '<span>' + teams[i].name + '    ' + teams[i].pj + '  |  ' + teams[i].pg + '  |  ' + teams[i].pe + '  |  ' + teams[i].pp + '  |  ' + teams[i].pts + '</span> </br>';
+        positions = positions + '<tr><th>' + (i + 1) + '.' + '</th><th>' + teams[i].name + '</th><th>' + teams[i].pj + '</th><th>' + teams[i].pg + '</th><th>' + teams[i].pe + '</th><th>' + teams[i].pp + '</th><th>' + teams[i].pts + '</th></tr>';
     }
+    positions = positions + '</table>';
     document.getElementById('table').innerHTML = positions;
     positions = "";
 }
@@ -105,3 +107,5 @@ document.body.addEventListener('click', () => {
     printTable();
 
 });  // close event listener
+
+
